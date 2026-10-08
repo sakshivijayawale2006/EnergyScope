@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EnergyScope | Smart Household Energy Analysis</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            ⚡ Energy<span>Scope</span>
+        </a>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#analysis">Analysis</a>
+
+            <a href="#predictor">Predict</a>
+
+            <a href="#calculator">Calculator</a>
+
+            <a href="#insights">Insights</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            ⚡ Smart Household Energy Analysis
+        </div>
+
+        <h1>
+            Understand your electricity.
+            <span>Predict your next bill.</span>
+        </h1>
+
+        <p>
+            EnergyScope helps households understand their electricity
+            consumption, estimate bills, predict future usage and find
+            possible reasons for high electricity costs.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#predictor"
+               class="btn btn-primary">
+                🔮 Predict My Usage
+            </a>
+
+            <a href="#calculator"
+               class="btn btn-secondary">
+                ⚡ Calculate My Bill
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+
+                <strong id="heroHouseholds">
+                    40
+                </strong>
+
+                <span>
+                    Sample Households
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong id="heroAverage">
+                    --
+                </strong>
+
+                <span>
+                    Average Consumption
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong id="heroPrediction">
+                    --
+                </strong>
+
+                <span>
+                    Demo Prediction
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            ABOUT THE PROJECT
+        </span>
+
+        <h2>
+            What is EnergyScope?
+        </h2>
+
+        <p>
+            EnergyScope is a household electricity analysis system
+            designed to understand consumption patterns and provide
+            simple data-driven predictions.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Analyse
+            </h3>
+
+            <p>
+                Study household electricity consumption using
+                sample household data.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔮
+            </div>
+
+            <h3>
+                Predict
+            </h3>
+
+            <p>
+                Enter your last three months of electricity usage
+                and estimate the next month's consumption.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>
+                Estimate
+            </h3>
+
+            <p>
+                Estimate electricity consumption and an approximate
+                monthly electricity bill.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💡
+            </div>
+
+            <h3>
+                Improve
+            </h3>
+
+            <p>
+                Find possible reasons for high usage and receive
+                practical electricity-saving suggestions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= OBJECTIVES ================= -->
+
+<section class="section soft-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            PROJECT OBJECTIVES
+        </span>
+
+        <h2>
+            What EnergyScope tries to solve
+        </h2>
+
+    </div>
+
+
+    <div class="objective-list">
+
+        <div>
+            <span>01</span>
+            Understand household electricity patterns.
+        </div>
+
+        <div>
+            <span>02</span>
+            Predict future electricity consumption.
+        </div>
+
+        <div>
+            <span>03</span>
+            Estimate expected electricity bills.
+        </div>
+
+        <div>
+            <span>04</span>
+            Identify possible reasons for high usage.
+        </div>
+
+        <div>
+            <span>05</span>
+            Give simple energy-saving recommendations.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SAMPLE DATA ANALYSIS ================= -->
+
+<section id="analysis" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            SAMPLE DATA ANALYSIS
+        </span>
+
+        <h2>
+            Household Electricity Dashboard
+        </h2>
+
+        <p>
+            This section uses 40 simulated/sample household records
+            to demonstrate data analysis.
+        </p>
+
+    </div>
+
+
+    <div class="stat-grid">
+
+        <div class="stat-card">
+
+            <span>
+                Households
+            </span>
+
+            <strong id="statHouseholds">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Average Usage
+            </span>
+
+            <strong id="statAverage">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Average Bill
+            </span>
+
+            <strong id="statBill">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Highest Usage
+            </span>
+
+            <strong id="statHighest">
+                --
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="chart-grid">
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Family Size Distribution
+                </h3>
+
+                <span>
+                    Sample households
+                </span>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="surveyChart"></canvas>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Consumption Category
+                </h3>
+
+                <span>
+                    Low / Medium / High
+                </span>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="categoryChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="chart-card full-chart">
+
+        <div class="chart-title">
+
+            <h3>
+                Monthly Electricity Pattern
+            </h3>
+
+            <span>
+                Historical sample trend
+            </span>
+
+        </div>
+
+        <div class="chart-container">
+
+            <canvas id="consumptionChart"></canvas>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="chart-grid">
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Appliance Usage
+                </h3>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="applianceChart"></canvas>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Family Size vs Consumption
+                </h3>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="familyChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PREDICTOR ================= -->
+
+<section id="predictor"
+         class="section predictor-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            🔮 PERSONAL PREDICTOR
+        </span>
+
+        <h2>
+            Predict Your Next Month
+        </h2>
+
+        <p>
+            Enter your electricity consumption for the last
+            three months. EnergyScope will estimate your
+            next month's consumption using a trend-based
+            regression calculation.
+        </p>
+
+    </div>
+
+
+
+    <div class="predictor-layout">
+
+
+        <!-- INPUT -->
+
+        <div class="form-card">
+
+            <h3>
+                Enter Your Previous Usage
+            </h3>
+
+            <p class="form-note">
+                Enter electricity consumption in kWh.
+            </p>
+
+
+            <div class="input-group">
+
+                <label>
+                    Month 1
+                </label>
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="month1"
+                        placeholder="Example: 145"
+                        min="1">
+
+                    <span>
+                        kWh
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Month 2
+                </label>
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="month2"
+                        placeholder="Example: 158"
+                        min="1">
+
+                    <span>
+                        kWh
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Month 3
+                </label>
+
+                <div class="input-with-unit">
+
+                    <input
+                        type="number"
+                        id="month3"
+                        placeholder="Example: 170"
+                        min="1">
+
+                    <span>
+                        kWh
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="predictBtn"
+                class="btn btn-primary full-btn">
+
+                🔮 Predict Next Month
+
+            </button>
+
+
+            <div id="predictionError"
+                 class="error-message">
+            </div>
+
+        </div>
+
+
+
+        <!-- RESULT -->
+
+        <div class="prediction-result">
+
+            <div class="prediction-top">
+
+                <span>
+                    🔮 PREDICTED NEXT MONTH
+                </span>
+
+                <strong id="userPrediction">
+                    --
+                </strong>
+
+                <small>
+                    kWh
+                </small>
+
+            </div>
+
+
+            <div class="prediction-comparison">
+
+                <div>
+
+                    <span>
+                        Month 1
+                    </span>
+
+                    <strong id="resultMonth1">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Month 2
+                    </span>
+
+                    <strong id="resultMonth2">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Month 3
+                    </span>
+
+                    <strong id="resultMonth3">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="prediction-message"
+                 id="predictionMessage">
+
+                Enter three months of consumption
+                to see your prediction.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="chart-card prediction-chart-card">
+
+        <div class="chart-title">
+
+            <h3>
+                Your Consumption Trend
+            </h3>
+
+            <span>
+                Previous 3 months + prediction
+            </span>
+
+        </div>
+
+        <div class="prediction-chart-container">
+
+            <canvas id="userPredictionChart"></canvas>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CALCULATOR ================= -->
+
+<section id="calculator"
+         class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            ⚡ ENERGY CALCULATOR
+        </span>
+
+        <h2>
+            Estimate Your Electricity Usage
+        </h2>
+
+        <p>
+            Enter how many appliances you use and approximately
+            how long you use them. EnergyScope will estimate
+            monthly consumption.
+        </p>
+
+    </div>
+
+
+
+    <div class="calculator-layout">
+
+
+        <!-- HOUSEHOLD -->
+
+        <div class="form-card">
+
+            <h3>
+                👨‍👩‍👧 Household
+            </h3>
+
+
+            <div class="input-group">
+
+                <label>
+                    Family Members
+                </label>
+
+                <input
+                    type="number"
+                    id="familyMembers"
+                    value="4"
+                    min="1"
+                    max="20">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AC -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    ❄️
+                </span>
+
+                <div>
+
+                    <h3>
+                        Air Conditioner
+                    </h3>
+
+                    <p>
+                        Approx. 1.5 kW
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Hours per day
+                </label>
+
+                <input
+                    type="number"
+                    id="acHours"
+                    value="2"
+                    min="0"
+                    max="24"
+                    step="0.5">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FAN -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    🌀
+                </span>
+
+                <div>
+
+                    <h3>
+                        Fans
+                    </h3>
+
+                    <p>
+                        Approx. 0.07 kW each
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-row">
+
+                <div class="input-group">
+
+                    <label>
+                        Number
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fanCount"
+                        value="3"
+                        min="0">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Hours/day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fanHours"
+                        value="8"
+                        min="0"
+                        max="24"
+                        step="0.5">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TV -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    📺
+                </span>
+
+                <div>
+
+                    <h3>
+                        Television
+                    </h3>
+
+                    <p>
+                        Approx. 0.1 kW
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Hours per day
+                </label>
+
+                <input
+                    type="number"
+                    id="tvHours"
+                    value="4"
+                    min="0"
+                    max="24"
+                    step="0.5">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LIGHTS -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    💡
+                </span>
+
+                <div>
+
+                    <h3>
+                        Lights
+                    </h3>
+
+                    <p>
+                        Approx. 0.01 kW each
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-row">
+
+                <div class="input-group">
+
+                    <label>
+                        Number
+                    </label>
+
+                    <input
+                        type="number"
+                        id="lightCount"
+                        value="6"
+                        min="0">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Hours/day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="lightHours"
+                        value="6"
+                        min="0"
+                        max="24"
+                        step="0.5">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FRIDGE -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    🧊
+                </span>
+
+                <div>
+
+                    <h3>
+                        Refrigerator
+                    </h3>
+
+                    <p>
+                        Approx. 1.2 kWh/day
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Usage
+                </label>
+
+                <select id="fridgeUsage">
+
+                    <option value="1">
+                        Used normally
+                    </option>
+
+                    <option value="1.2">
+                        Older / high usage
+                    </option>
+
+                    <option value="0.8">
+                        Energy efficient
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WASHING MACHINE -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    🧺
+                </span>
+
+                <div>
+
+                    <h3>
+                        Washing Machine
+                    </h3>
+
+                    <p>
+                        Approx. 0.5 kWh/cycle
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Cycles per week
+                </label>
+
+                <input
+                    type="number"
+                    id="washingCycles"
+                    value="3"
+                    min="0"
+                    max="30">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- OTHER -->
+
+        <div class="form-card appliance-card">
+
+            <div class="appliance-heading">
+
+                <span class="appliance-icon">
+                    🔌
+                </span>
+
+                <div>
+
+                    <h3>
+                        Other Appliances
+                    </h3>
+
+                    <p>
+                        Mixer, laptop, iron, etc.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Estimated kWh/month
+                </label>
+
+                <input
+                    type="number"
+                    id="otherUnits"
+                    value="30"
+                    min="0">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="calculator-action">
+
+        <button
+            id="calculateBtn"
+            class="btn btn-primary">
+
+            ⚡ Calculate My Usage
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= CALCULATOR RESULT ================= -->
+
+<section id="calculatorResult"
+         class="section result-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            YOUR RESULT
+        </span>
+
+        <h2>
+            Your Estimated Electricity Usage
+        </h2>
+
+    </div>
+
+
+    <div class="result-grid">
+
+        <div class="big-result-card">
+
+            <span>
+                Estimated Monthly Consumption
+            </span>
+
+            <strong id="estimatedUnits">
+                --
+            </strong>
+
+            <small>
+                kWh / month
+            </small>
+
+        </div>
+
+
+        <div class="big-result-card bill-result">
+
+            <span>
+                Estimated Electricity Bill
+            </span>
+
+            <strong id="estimatedBill">
+                --
+            </strong>
+
+            <small>
+                Approximate estimate
+            </small>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="chart-grid">
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Where Your Electricity Goes
+                </h3>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="applianceResultChart"></canvas>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-title">
+
+                <h3>
+                    Consumption Breakdown
+                </h3>
+
+            </div>
+
+            <div id="breakdownList"
+                 class="breakdown-list">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HIGH BILL CHECK -->
+
+    <div class="high-bill-card">
+
+        <div class="high-bill-icon">
+            🔍
+        </div>
+
+        <div>
+
+            <h3>
+                Is Your Electricity Bill Higher?
+            </h3>
+
+            <p>
+                Enter your actual bill below to compare it
+                with the EnergyScope estimate.
+            </p>
+
+        </div>
+
+
+        <div class="actual-bill-input">
+
+            <input
+                type="number"
+                id="actualBill"
+                placeholder="Actual bill ₹"
+                min="0">
+
+            <button
+                id="compareBillBtn"
+                class="btn btn-dark">
+
+                Compare
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="billComparison"
+         class="bill-comparison">
+    </div>
+
+</section>
+
+
+
+<!-- ================= INSIGHTS ================= -->
+
+<section id="insights"
+         class="section soft-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            🔍 ENERGY INSIGHTS
+        </span>
+
+        <h2>
+            Why Could Your Bill Be High?
+        </h2>
+
+        <p>
+            EnergyScope checks the information entered by the
+            user and identifies possible consumption factors.
+        </p>
+
+    </div>
+
+
+
+    <div class="insight-grid">
+
+        <div class="insight-card">
+
+            <div class="insight-number">
+                01
+            </div>
+
+            <h3>
+                Family Size
+            </h3>
+
+            <p id="insightFamily">
+                Larger households may use more electricity because
+                several people use appliances throughout the day.
+            </p>
+
+        </div>
+
+
+        <div class="insight-card">
+
+            <div class="insight-number">
+                02
+            </div>
+
+            <h3>
+                Air Conditioner
+            </h3>
+
+            <p id="insightAC">
+                AC usage can become a major contributor to household
+                electricity consumption.
+            </p>
+
+        </div>
+
+
+        <div class="insight-card">
+
+            <div class="insight-number">
+                03
+            </div>
+
+            <h3>
+                Long Appliance Usage
+            </h3>
+
+            <p id="insightHigh">
+                Using appliances for longer periods can increase
+                monthly electricity consumption.
+            </p>
+
+        </div>
+
+
+        <div class="insight-card">
+
+            <div class="insight-number">
+                04
+            </div>
+
+            <h3>
+                Saving Opportunities
+            </h3>
+
+            <p id="insightSaving">
+                Reducing unnecessary appliance usage can help lower
+                electricity consumption.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TIPS ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            💡 SMART ENERGY TIPS
+        </span>
+
+        <h2>
+            Simple Ways to Reduce Electricity Use
+        </h2>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            <span>❄️</span>
+            <h3>Use AC Wisely</h3>
+            <p>
+                Avoid unnecessary AC usage and keep doors and
+                windows closed while the AC is running.
+            </p>
+        </div>
+
+
+        <div class="tip-card">
+            <span>💡</span>
+            <h3>Switch Off Lights</h3>
+            <p>
+                Turn off lights when leaving a room.
+            </p>
+        </div>
+
+
+        <div class="tip-card">
+            <span>🔌</span>
+            <h3>Reduce Standby Power</h3>
+            <p>
+                Switch off appliances completely when they are
+                not required.
+            </p>
+        </div>
+
+
+        <div class="tip-card">
+            <span>🧺</span>
+            <h3>Use Full Washing Loads</h3>
+            <p>
+                Avoid running several small washing cycles when
+                one full load is possible.
+            </p>
+        </div>
+
+
+        <div class="tip-card">
+            <span>🧊</span>
+            <h3>Maintain Your Fridge</h3>
+            <p>
+                Keep the refrigerator properly maintained and
+                avoid opening it unnecessarily.
+            </p>
+        </div>
+
+
+        <div class="tip-card">
+            <span>⚡</span>
+            <h3>Think Before You Use</h3>
+            <p>
+                Small daily changes can reduce monthly
+                electricity consumption.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DATA TABLE ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            SAMPLE DATA
+        </span>
+
+        <h2>
+            Household Records
+        </h2>
+
+        <p>
+            Simulated data used for demonstrating data analysis.
+        </p>
+
+    </div>
+
+
+    <div class="table-tools">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search household...">
+
+    </div>
+
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Members</th>
+
+                    <th>AC</th>
+
+                    <th>Fans</th>
+
+                    <th>TV</th>
+
+                    <th>Washing</th>
+
+                    <th>Fridge</th>
+
+                    <th>Units</th>
+
+                    <th>Bill</th>
+
+                    <th>Category</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="dataTableBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>
+                ⚡ EnergyScope
+            </h2>
+
+            <p>
+                Smart household electricity analysis,
+                prediction and awareness.
+            </p>
+
+        </div>
+
+
+        <div class="footer-note">
+
+            <strong>
+                Project Note
+            </strong>
+
+            <p>
+                CREATED BY SAKSHI AWALE WITH THE ASSISTANCE OF AI
+            </p>
+
+        </div
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 EnergyScope · BSc Data Science CEP Project
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/data.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
